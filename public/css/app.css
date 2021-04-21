@@ -16046,4 +16046,9 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+header .underNavImg {
+  height: 80vh;
+  background-image: url(../../../public/img/banner-bg.jpg);
+}
+
 /*# sourceMappingURL=app.css.map */
