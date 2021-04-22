@@ -1,0 +1,63 @@
+.monFooter{
+    height: 100px;
+    .divFacebook{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: white 1px solid;
+        border-radius: 50%;
+        width: 5%;
+        font-size: 12px;
+        margin: 5px;
+    }
+    .divTwitter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: white 1px solid;
+        border-radius: 50%;
+        width: 5%;
+        font-size: 12px;
+        margin: 5px;
+    }
+    .divIn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: white 1px solid;
+        border-radius: 50%;
+        width: 5%;
+        font-size: 12px;
+        margin: 5px;
+    }
+    .divWifi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: white 1px solid;
+        border-radius: 50%;
+        width: 5%;
+        font-size: 12px;
+        margin: 5px;
+    }
+    .divBall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: white 1px solid;
+        border-radius: 50%;
+        width: 6%;
+        height: 25px;
+        font-size: 12px;
+        margin: 5px;
+    }
+        .icon1{
+            transform: rotate(45deg);
+        }
+    
+}

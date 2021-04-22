@@ -1,0 +1,49 @@
+.div-1{
+    height: 500px;
+    .divimg1{
+        img{
+            width: 450px;
+        }
+    }
+}
+.sec-sombre{
+    .divSec-sombre{
+    background-image: url(../../../public/img/book-bg.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+.sec-Basse{
+    background-image: url(../../../public/img/signup-bg.jpg);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .divsec-Basse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .divInput{
+            .input-1{
+                border: white solid 1px;
+                border-radius: 5px;
+                height: 40px;
+                width: 25%;
+            }
+            .theButton{
+                background-color: transparent;
+                border: white 1px solid;
+                border-radius: 4px;
+                color: white;
+                height: 40px;
+                width: 150px;
+            }
+        }
+    }
+}

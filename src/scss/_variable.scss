@@ -1,4 +1,20 @@
 $theme-colors: (
-    "clair":   #EAF0FF 
+    "clair": #EAF0FF,
+    "grisé": #16161600,
+    "rouge": #cc3746,
+    "bleuet": #F2F6FF
 );
 $lora: 'Lora', serif;
+$spacers: (
+  (
+    6: 6*1em,
+    7: 7*1em
+  )
+);
+$sizes: (
+  (
+    125: 125%,
+    20: 20%
+    
+  )
+);
