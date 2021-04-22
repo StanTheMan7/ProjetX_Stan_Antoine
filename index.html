@@ -11,69 +11,154 @@
 
 <body>
     <header>
-        
-            <nav class="bg-clair">
-                <h1 class="text-center p-3">Victory</h1>
-                <div class="d-flex justify-content-center">
-                    <ul class="nav justify-content-center w-75 border-top mt-3 p-3">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="./index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="./menu.html">OUR MENUS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="./blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="./contact.html">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="underNavImg">
-                <h3 class="myTitlesH3 text-white">HERE YOU CAN FIND DELICIOUS FOODS</h3>
-                <h1 class="titreH1 text-white">ASIAN RESTAURANT</h1>
-                <p class="monParagraph text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-                    repellendus officia. Quaerat vari karin vdi sheti na plasi kari.</p>
-                <button class="bg-danger text-white ">ORDER RIGHT NOW</button>
+
+        <nav class="bg-clair">
+            <h1 class="text-center p-3">Victory</h1>
+            <div class="d-flex justify-content-center">
+                <ul class="nav justify-content-center w-75 border-top mt-3 p-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./public/pages/menu.html">OUR MENUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./public/pages/blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./public/pages/contact.html">CONTACT US</a>
+                    </li>
+                </ul>
             </div>
-            
+        </nav>
+        <div class="underNavImg mb-5 ">
+            <h3 class="myTitlesH3 text-white">HERE YOU CAN FIND DELICIOUS FOODS</h3>
+            <h1 class="titreH1 text-white">ASIAN RESTAURANT</h1>
+            <p class="monParagraph text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                repellendus officia. Quaerat vari karin vdi sheti na plasi kari.</p>
+            <button class="bg-danger text-white ">ORDER RIGHT NOW</button>
+        </div>
+
     </header>
 
     <section class="d-flex flex-column justify-content-center">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center m-5">
             <div class="secImg pt-5 pb-5 pl-5">
                 <img src="./public/img/cook_01.jpg" alt="">
             </div>
-            <div class="midleCard bg-danger w-25 d-flex flex-column align-items-center justify-content-center text-white">
+            <div class="midleCard bg-rose w-25 d-flex flex-column align-items-center justify-content-center text-white">
                 <h3>WE COOK DELICIOUS</h3>
-                <div class="">
-                    <h6>YOU CAN CALL US ON:</h6>
+                <div class="d-flex flex-column align-items-center bg-roselight w-75 mt-4 mb-4 p-4">
+                    <h6 class="text-center">YOU CAN CALL US ON:</h6>
                     <h3>+1234 567 8910</h3>
+
                 </div>
+                <span class="text-center mb-4">OR</span>
+                <button class=" bg-white border-0 text-rose">ORDER NOW</button>
             </div>
             <div class="secImg  pt-5 pb-5 pr-5">
                 <img src="./public/img/cook_02.jpg" alt="">
             </div>
         </div>
-        <div class="menu-item d-flex justify-content-center ">
-            <div class="m-5">
+        <div class="menu-item d-flex justify-content-around text-center mt-5 pl-5 pr-5 mr-5 ml-5 mb-5">
+            <div>
                 <img src="./public/img/cook_breakfast.png" alt="">
-                <h3>Breakfast</h3>
+                <h3 class="m-4">Breakfast</h3>
             </div>
-            <div class="m-5">
+            <div>
                 <img src="./public/img/cook_lunch.png" alt="">
-                <h3>Lunch</h3>
+                <h3 class="m-4">Lunch</h3>
             </div>
-            <div class="m-5">
+            <div>
                 <img src="./public/img/cook_dinner.png" alt="">
-                <h3>Dinner</h3>
+                <h3 class="m-4">Dinner</h3>
             </div>
-            <div class="m-5">
+            <div>
                 <img src="public/img/cook_dessert.png" alt="">
-                <h3>Dessert</h3>
+                <h3 class="m-4">Dessert</h3>
             </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="reservation w-80 ">
+
+            <h3 class="mb-5 text-white text-center">BOOK YOUR TABLE NOW</h3>
+
+            <div class=" d-flex w-75 mt-5 ">
+                <div class="w-50">
+                    <img src="./public/img/book_left_image.jpg" class="w-100" alt="">
+                </div>
+                <div class="divblancheReservation bg-white d-flex flex-column justify-content-center align-items-center w-50 ">
+                    <h3 class=" mb-3">Reservation</h3>
+                    <div class="divuButton1 d-flex  w-100 justify-content-between">
+                        <form action="/action_page.php" class="w-50 d-flex justify-content-center ">
+                            <select name="cars" id="cars"
+                                class=" border-bottom border-left-0 border-right-0 border-top-0 w-75">
+                                <option value="select day">Select day</option>
+                                <option value="lundi">Lundi</option>
+                                <option value="mardi">Mardi</option>
+                                <option value="mercredi">Mercredi</option>
+                                <option value="jeudi">Jeudi</option>
+                                <option value="vendredi">vendredi</option>
+                                <option value="Samedi">Samedi</option>
+                                <option value="Dimanche">Dimanche</option>
+                            </select>
+                        </form>
+                        <form action="/action_page.php" class="w-50 d-flex justify-content-center ">
+                            <select name="cars" id="cars"
+                                class="  border-bottom border-left-0 border-right-0 border-top-0  w-75">
+                                <option value="select hour">Select hour</option>
+                                <option value="18h00">18h00</option>
+                                <option value="18h30">18h30</option>
+                                <option value="19h00">19h00</option>
+                                <option value="19h30">19h30</option>
+                                <option value="20h00">20h00</option>
+                                <option value="20h30">20h30</option>
+                                <option value="21h00">21h00</option>
+                            </select>
+                            <br><br>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </form>
+                    </div>
+                    <div class="divButton2 d-flex justify-content-between w-100 align-items-center mt-5">
+                        <form id="myGeeks" class="d-flex justify-content-center w-50">
+                            <input type="text" 
+                                class="w-75  border-bottom border-left-0 border-right-0 border-top-0  d-flex  text-left"
+                                name="geeks" pattern="[A-Za-z]{3}" value="Full name">
+                        </form>
+                        <form id="myGeeks" class="d-flex justify-content-center w-50">
+                            <input type="text" 
+                                class="w-75  border-bottom border-left-0 border-right-0 border-top-0  " name="geeks"
+                                pattern="[A-Za-z]{3}" value="Phone number">
+                        </form>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center mt-5 ">
+
+                        <div class="form-group w-50 d-flex justify-content-center">
+                            <select class="form-control w-75  border-top-0 border-left-0 border-right-0  p-1" id="exampleFormControlSelect1">
+                                <option>How many persons </option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class=" w-50 d-flex justify-content-end mr-4">
+                            <button class="button2 p-0 bg-rose "> BOOK TABLE</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="UnderReservation">
+        <div class="divRose d-flex flex-column align-items-center justify-content-center text-white  bg-rose">
+            <h4>GET APPLICATION FOR YOUR PHONE</h4>
+            <button>DOWNLOAD NOW</button>
         </div>
     </section>
 

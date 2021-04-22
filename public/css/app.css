@@ -29,6 +29,8 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --clair: #EAF0FF;
+  --rose: #F3826F;
+  --roselight: #f1a597;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1877,6 +1879,46 @@ pre code {
   background-color: #e0eaff;
 }
 
+.table-rose,
+.table-rose > th,
+.table-rose > td {
+  background-color: #fcdcd7;
+}
+.table-rose th,
+.table-rose td,
+.table-rose thead th,
+.table-rose tbody + tbody {
+  border-color: #f9beb4;
+}
+
+.table-hover .table-rose:hover {
+  background-color: #fac7bf;
+}
+.table-hover .table-rose:hover > td,
+.table-hover .table-rose:hover > th {
+  background-color: #fac7bf;
+}
+
+.table-roselight,
+.table-roselight > th,
+.table-roselight > td {
+  background-color: #fbe6e2;
+}
+.table-roselight th,
+.table-roselight td,
+.table-roselight thead th,
+.table-roselight tbody + tbody {
+  border-color: #f8d0c9;
+}
+
+.table-hover .table-roselight:hover {
+  background-color: #f8d3cc;
+}
+.table-hover .table-roselight:hover > td,
+.table-hover .table-roselight:hover > th {
+  background-color: #f8d3cc;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2712,6 +2754,66 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(204, 210, 223, 0.5);
 }
 
+.btn-rose {
+  color: #212529;
+  background-color: #F3826F;
+  border-color: #F3826F;
+}
+.btn-rose:hover {
+  color: #fff;
+  background-color: #f0634c;
+  border-color: #ef5940;
+}
+.btn-rose:focus, .btn-rose.focus {
+  color: #fff;
+  background-color: #f0634c;
+  border-color: #ef5940;
+  box-shadow: 0 0 0 0.2rem rgba(212, 116, 101, 0.5);
+}
+.btn-rose.disabled, .btn-rose:disabled {
+  color: #212529;
+  background-color: #F3826F;
+  border-color: #F3826F;
+}
+.btn-rose:not(:disabled):not(.disabled):active, .btn-rose:not(:disabled):not(.disabled).active, .show > .btn-rose.dropdown-toggle {
+  color: #fff;
+  background-color: #ef5940;
+  border-color: #ee4f34;
+}
+.btn-rose:not(:disabled):not(.disabled):active:focus, .btn-rose:not(:disabled):not(.disabled).active:focus, .show > .btn-rose.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(212, 116, 101, 0.5);
+}
+
+.btn-roselight {
+  color: #212529;
+  background-color: #f1a597;
+  border-color: #f1a597;
+}
+.btn-roselight:hover {
+  color: #212529;
+  background-color: #ec8875;
+  border-color: #eb7e6a;
+}
+.btn-roselight:focus, .btn-roselight.focus {
+  color: #212529;
+  background-color: #ec8875;
+  border-color: #eb7e6a;
+  box-shadow: 0 0 0 0.2rem rgba(210, 146, 135, 0.5);
+}
+.btn-roselight.disabled, .btn-roselight:disabled {
+  color: #212529;
+  background-color: #f1a597;
+  border-color: #f1a597;
+}
+.btn-roselight:not(:disabled):not(.disabled):active, .btn-roselight:not(:disabled):not(.disabled).active, .show > .btn-roselight.dropdown-toggle {
+  color: #212529;
+  background-color: #eb7e6a;
+  border-color: #e9745f;
+}
+.btn-roselight:not(:disabled):not(.disabled):active:focus, .btn-roselight:not(:disabled):not(.disabled).active:focus, .show > .btn-roselight.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(210, 146, 135, 0.5);
+}
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff;
@@ -2935,6 +3037,56 @@ fieldset:disabled a.btn {
 }
 .btn-outline-clair:not(:disabled):not(.disabled):active:focus, .btn-outline-clair:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-clair.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(234, 240, 255, 0.5);
+}
+
+.btn-outline-rose {
+  color: #F3826F;
+  border-color: #F3826F;
+}
+.btn-outline-rose:hover {
+  color: #212529;
+  background-color: #F3826F;
+  border-color: #F3826F;
+}
+.btn-outline-rose:focus, .btn-outline-rose.focus {
+  box-shadow: 0 0 0 0.2rem rgba(243, 130, 111, 0.5);
+}
+.btn-outline-rose.disabled, .btn-outline-rose:disabled {
+  color: #F3826F;
+  background-color: transparent;
+}
+.btn-outline-rose:not(:disabled):not(.disabled):active, .btn-outline-rose:not(:disabled):not(.disabled).active, .show > .btn-outline-rose.dropdown-toggle {
+  color: #212529;
+  background-color: #F3826F;
+  border-color: #F3826F;
+}
+.btn-outline-rose:not(:disabled):not(.disabled):active:focus, .btn-outline-rose:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-rose.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(243, 130, 111, 0.5);
+}
+
+.btn-outline-roselight {
+  color: #f1a597;
+  border-color: #f1a597;
+}
+.btn-outline-roselight:hover {
+  color: #212529;
+  background-color: #f1a597;
+  border-color: #f1a597;
+}
+.btn-outline-roselight:focus, .btn-outline-roselight.focus {
+  box-shadow: 0 0 0 0.2rem rgba(241, 165, 151, 0.5);
+}
+.btn-outline-roselight.disabled, .btn-outline-roselight:disabled {
+  color: #f1a597;
+  background-color: transparent;
+}
+.btn-outline-roselight:not(:disabled):not(.disabled):active, .btn-outline-roselight:not(:disabled):not(.disabled).active, .show > .btn-outline-roselight.dropdown-toggle {
+  color: #212529;
+  background-color: #f1a597;
+  border-color: #f1a597;
+}
+.btn-outline-roselight:not(:disabled):not(.disabled):active:focus, .btn-outline-roselight:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-roselight.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(241, 165, 151, 0.5);
 }
 
 .btn-link {
@@ -4864,6 +5016,32 @@ a.badge-clair:focus, a.badge-clair.focus {
   box-shadow: 0 0 0 0.2rem rgba(234, 240, 255, 0.5);
 }
 
+.badge-rose {
+  color: #212529;
+  background-color: #F3826F;
+}
+a.badge-rose:hover, a.badge-rose:focus {
+  color: #212529;
+  background-color: #ef5940;
+}
+a.badge-rose:focus, a.badge-rose.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(243, 130, 111, 0.5);
+}
+
+.badge-roselight {
+  color: #212529;
+  background-color: #f1a597;
+}
+a.badge-roselight:hover, a.badge-roselight:focus {
+  color: #212529;
+  background-color: #eb7e6a;
+}
+a.badge-roselight:focus, a.badge-roselight.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(241, 165, 151, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -5016,6 +5194,30 @@ a.badge-clair:focus, a.badge-clair.focus {
 }
 .alert-clair .alert-link {
   color: #62646a;
+}
+
+.alert-rose {
+  color: #7e443a;
+  background-color: #fde6e2;
+  border-color: #fcdcd7;
+}
+.alert-rose hr {
+  border-top-color: #fac7bf;
+}
+.alert-rose .alert-link {
+  color: #5b312a;
+}
+
+.alert-roselight {
+  color: #7d564f;
+  background-color: #fcedea;
+  border-color: #fbe6e2;
+}
+.alert-roselight hr {
+  border-top-color: #f8d3cc;
+}
+.alert-roselight .alert-link {
+  color: #5e413b;
 }
 
 @keyframes progress-bar-stripes {
@@ -5387,6 +5589,34 @@ a.badge-clair:focus, a.badge-clair.focus {
   color: #fff;
   background-color: #7a7d85;
   border-color: #7a7d85;
+}
+
+.list-group-item-rose {
+  color: #7e443a;
+  background-color: #fcdcd7;
+}
+.list-group-item-rose.list-group-item-action:hover, .list-group-item-rose.list-group-item-action:focus {
+  color: #7e443a;
+  background-color: #fac7bf;
+}
+.list-group-item-rose.list-group-item-action.active {
+  color: #fff;
+  background-color: #7e443a;
+  border-color: #7e443a;
+}
+
+.list-group-item-roselight {
+  color: #7d564f;
+  background-color: #fbe6e2;
+}
+.list-group-item-roselight.list-group-item-action:hover, .list-group-item-roselight.list-group-item-action:focus {
+  color: #7d564f;
+  background-color: #f8d3cc;
+}
+.list-group-item-roselight.list-group-item-action.active {
+  color: #fff;
+  background-color: #7d564f;
+  border-color: #7d564f;
 }
 
 .close {
@@ -6240,6 +6470,26 @@ button.bg-clair:focus {
   background-color: #b7ccff !important;
 }
 
+.bg-rose {
+  background-color: #F3826F !important;
+}
+
+a.bg-rose:hover, a.bg-rose:focus,
+button.bg-rose:hover,
+button.bg-rose:focus {
+  background-color: #ef5940 !important;
+}
+
+.bg-roselight {
+  background-color: #f1a597 !important;
+}
+
+a.bg-roselight:hover, a.bg-roselight:focus,
+button.bg-roselight:hover,
+button.bg-roselight:focus {
+  background-color: #eb7e6a !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -6322,6 +6572,14 @@ button.bg-clair:focus {
 
 .border-clair {
   border-color: #EAF0FF !important;
+}
+
+.border-rose {
+  border-color: #F3826F !important;
+}
+
+.border-roselight {
+  border-color: #f1a597 !important;
 }
 
 .border-white {
@@ -7509,6 +7767,26 @@ button.bg-clair:focus {
   width: auto !important;
 }
 
+.w-60 {
+  width: 60% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -7527,6 +7805,26 @@ button.bg-clair:focus {
 
 .h-auto {
   height: auto !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-65 {
+  height: 65% !important;
+}
+
+.h-70 {
+  height: 70% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-85 {
+  height: 85% !important;
 }
 
 .mw-100 {
@@ -9925,6 +10223,22 @@ a.text-dark:hover, a.text-dark:focus {
 
 a.text-clair:hover, a.text-clair:focus {
   color: #9eb9ff !important;
+}
+
+.text-rose {
+  color: #F3826F !important;
+}
+
+a.text-rose:hover, a.text-rose:focus {
+  color: #ed4528 !important;
+}
+
+.text-roselight {
+  color: #f1a597 !important;
+}
+
+a.text-roselight:hover, a.text-roselight:focus {
+  color: #e86b54 !important;
 }
 
 .text-body {
@@ -16214,6 +16528,49 @@ header .underNavImg button {
   width: 14%;
   border-radius: 5px;
   border: none;
+}
+
+section .midleCard button {
+  font-weight: bold;
+  height: 45px;
+  width: 38%;
+  border-radius: 5px;
+}
+section .menu-item img {
+  border: solid #DCDCDC 10px;
+  border-radius: 50%;
+}
+
+.section2 {
+  background-image: url(../../../public/img/book-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+.section2 .reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section2 .reservation div .button2 {
+  height: 50px;
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+}
+
+.UnderReservation .divRose {
+  height: 150px;
+  width: 100%;
+}
+.UnderReservation .divRose button {
+  height: 50px;
+  background-color: white;
+  border: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
