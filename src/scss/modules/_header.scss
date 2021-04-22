@@ -6,6 +6,28 @@ header{
         font-family: 'Lora', serif;
         font-style: italic bold;
         }
+        font-weight: bold italic;
+    }
+}
+.imgHeader{
+    background-image: url(../../../public/img/heading-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    p{
+        width: 40%;
+        text-align: center;
+        font-size: medium;
     }
     .underNavImg{
     height: 80vh;

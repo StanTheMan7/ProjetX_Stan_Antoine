@@ -1,4 +1,5 @@
 $theme-colors: (
+<<<<<<< HEAD
     "clair":   #EAF0FF ,
     "rose" : #F3826F, 
     "roselight" :#f1a597
@@ -17,3 +18,24 @@ $sizes: (
 
 );
 
+=======
+    "clair": #EAF0FF,
+    "grisé": #16161600,
+    "rouge": #cc3746,
+    "bleuet": #F2F6FF
+);
+$lora: 'Lora', serif;
+$spacers: (
+  (
+    6: 6*1em,
+    7: 7*1em
+  )
+);
+$sizes: (
+  (
+    125: 125%,
+    20: 20%
+    
+  )
+);
+>>>>>>> 591a20c8e6d96c855791a7f5888a538f3bd69a23
