@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/app.css">i
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/app.css" />
+    i
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="bg-clair">
-            <h1 class="text-center p-3">Victory</h1>
-            <div class="d-flex justify-content-center">
-                <ul class="nav justify-content-center w-75 border-top mt-3 p-3">
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="../../index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="./menu.html">OUR MENUS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="./blog.html">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="./contact.html">CONTACT US</a>
-                    </li>
-                  </ul>
-            </div>
-        </nav>
-        <div class="imgHeader">
-            <h1 class="text-white">CONTACT US</h1>
-            <P class="text-white mb-0 mt-4">Whatever drinking vinegar hella fingerstache shoreditch kickstarter kitsch. La croix hella iceland flexitarian letterpress.</P>
+      <nav class="bg-clair">
+        <h1 class="text-center p-3">Victory</h1>
+        <div class="d-flex justify-content-center">
+          <ul class="nav justify-content-center w-75 border-top mt-3 p-3">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./menu.html">OUR MENUS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./contact.html">CONTACT US</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+      <div class="imgHeader">
+        <h1 class="text-white">CONTACT US</h1>
+        <p class="text-white mb-0 mt-4">
+          Whatever drinking vinegar hella fingerstache shoreditch kickstarter
+          kitsch. La croix hella iceland flexitarian letterpress.
+        </p>
+      </div>
     </header>
-    <section sec-contact>
-        <div class="divhaute1 w-100 d-flex">
-            <div class="divMessage w-50">
-                <h3>MESSAGE</h3>
-                <div class="divForm d-flex flex-row w-100">
-                  <div class="column w-50">
-                    <div class="row">
-                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                    </div>
-                    <div class="row">
-                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                    </div>
-                    <div class="row">
-                      <input type="text" class="form-control" placeholder="Your phone" aria-label="Your phone">
-                    </div>
-                  </div>
-                  <div class="column w-50">
-                    <div class="row">
-                      <input type="text" class="form-control" placeholder="Your message" aria-label="Your message">
-                    </div>
-                    <button>SEND MESSAGE</button>
-                  </div>
-                </div>
+    <section class="sec-contact">
+      <div class="reservation w-80">
+        <div class="d-flex w-75 mt-5">
+          <div
+            class="divblancheReservation bg-white d-flex flex-column justify-content-center align-items-center w-50"
+          >
+            <div class="divDuh3 w-100 ml-7">
+              <h3 class="mb-3">MESSAGE</h3>
             </div>
+            <div class="row w-100">
+              <div class="column1 w-50">
+                <form
+                  action="/action_page.php"
+                  class="w-100 m-3 d-flex justify-content-center"
+                >
+                  <div>
+                    <input type="text" class="form-control bg-grisa" placeholder="Your name..." aria-label="Your name">
+                  </div>
+                </form>
+                <form
+                  action="/action_page.php"
+                  class="w-100 m-3 d-flex justify-content-center"
+                >
+                  <div>
+                    <input type="text" class="form-control bg-grisa" placeholder="Your email..." aria-label="Your email">
+                  </div>
+                </form>
+                <form
+                  action="/action_page.php"
+                  class="w-100 m-3 d-flex justify-content-center"
+                >
+                  <div>
+                    <input type="text" class="form-control bg-grisa" placeholder="Your phone..." aria-label="Your phone">
+                  </div>
+                </form>
+              </div>
+              <div class="column2 w-50">
+                <div class="form-floating mt-3 mb-3">
+                  <textarea class="form-control bg-grisa" placeholder="Your message..." id="floatingTextarea2" style="height: 90px"></textarea>
+                </div>
+                <div class="buttonContact w-100 d-flex justify-content-center bg-grisa" style="height: 40px">
+                  <button class="button3 p-0 w-100 bg-grisa">BOOK TABLE</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
+<!-- <div class="w-50 d-flex justify-content-end mr-4">
+  <button class="button3 p-0 bg-rose">BOOK TABLE</button>
+</div> -->
